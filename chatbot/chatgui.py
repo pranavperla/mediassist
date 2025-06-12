@@ -52,13 +52,17 @@ def predict_class(sentence, model):
     return return_list
 
 def getResponse(ints, intents_json):
+    if not ints:
+        return "I'm sorry, I didn't understand that."
+
     tag = ints[0]['intent']
     list_of_intents = intents_json['intents']
     for i in list_of_intents:
-        if(i['tag']== tag):
-            result = random.choice(i['responses'])
-            break
-    return result
+        if i['tag'] == tag:
+            return random.choice(i['responses'])
+
+    # Fallback in case tag is not found
+    return "I'm sorry, I didn't understand that."
 
 def chatbot_response(msg):
     ints = predict_class(msg, model)
