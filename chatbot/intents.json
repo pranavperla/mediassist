@@ -25,7 +25,7 @@
          "context": [""]
         },
         {"tag": "adverse_drug",
-         "patterns": ["How to check Adverse drug reaction?", "Open adverse drugs module", "Give me a list of drugs causing adverse behavior", "List all drugs suitable for patient with adverse reaction", "Which drugs dont have adverse reaction?" ],
+         "patterns": ["How to check Adverse drug reaction?", "Open adverse drugs module", "Give me a list of drugs causing adverse behavior", "List all drugs suitable for patient with adverse reaction", "Which drugs don't have adverse reaction?" ],
          "responses": ["Navigating to Adverse drug reaction module"],
          "context": [""]
         },
